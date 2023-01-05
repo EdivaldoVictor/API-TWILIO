@@ -2,9 +2,6 @@ const express = require('express');
 const router = express.Router();
 const twilio = require('twilio');
 
-
-const dbPassword = process.env.DB_PASSWORD;
-
 require('dotenv').config();
 
 const accountSid = process.env.ACCOUNT_SID;

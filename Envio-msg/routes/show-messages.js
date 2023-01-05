@@ -5,8 +5,8 @@ const twilio = require('twilio');
 
 async function getSentMessages() {
   // Defina o ID da conta e o token de autenticação do Twilio
-  const accountSid = 'AC2b6cd152cd289d280f83706c3f757ba0';
-  const authToken = 'b64a98ef00da3adc9caa73f95e5f7e8e';
+  const accountSid = process.env.ACCOUNT_SID;
+  const authToken = process.env.AUTH_TOKEN;
 
   // Crie uma instância do cliente do Twilio
   const client = new twilio(accountSid, authToken);
