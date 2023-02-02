@@ -13,9 +13,9 @@ router.post('/', (req, res) => {
   const { to, body } = req.body;
   client.messages
     .create({
-      to: '5581997150571',
-      body: 'Seja bem vindo ao meu serviço',
-      from: '12183046079',
+      to,
+      body,
+      from
     })
     .then(() => {
       res.send('Mensagem enviada com sucesso');
